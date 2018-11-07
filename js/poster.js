@@ -14,11 +14,15 @@ function Message(userId, text, timestamp) {
 
 function renderMessage(message) {
     let msgContainer = document.createElement("div");
+
+    msgContainer.classList.add("messageContainer");
     
     let upperDiv = document.createElement("div");
     let lowerDiv = document.createElement("div");
 
     let nameSpan = document.createElement("span");
+    nameSpan.classList.add("messageName");
+
     let timestampSpan = document.createElement("span");
 
     upperDiv.appendChild(nameSpan);
@@ -28,7 +32,7 @@ function renderMessage(message) {
         .filter(u => u.id == message.userId)
         .map(u => u.email);
 
-    timestampSpan.innerText = message.timestamp;
+    timestampSpan.innerText = " " + moment(message.timestamp).format("DD.MM hh:mm A");
 
     lowerDiv.innerText = message.text;
 
@@ -47,7 +51,7 @@ function renderUser(user) {
 
 function addMessage() {
     let userId = viewModel.userId;
-    let timestamp = "timestamp";
+    let timestamp = moment.utc().valueOf();
     let inputText = document.getElementById("inputText");
     let text = inputText.value;
 

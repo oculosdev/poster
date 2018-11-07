@@ -3,24 +3,10 @@
     <head>
         <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
         <script src="/js/firebase-init.js"></script>
-        <style>
-            div {
-                border: 1px solid lightgray;
-            }
-            #main {
-                display: grid;
-                grid-template-columns: 220px auto;
-            }
-            #mainLeftPanel {
-                display: grid;
-                grid-template-columns: auto 200px;
-            }
-
-            #rightPanel {
-                display: grid;
-                grid-template-rows: 40px auto;
-            }
-        </style>
+        <script src="/js/moment.js"></script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/poster.css"/>
 
         <script src="/js/poster.js"></script>
     </head>
@@ -44,7 +30,9 @@
                             <span>#general</span>
                         </div>
                         <div id="topLeftBottomPanel">
-                            
+                                <i class="far fa-star"></i> |
+                                <i class="far fa-user"></i> <span>0</span> |
+                                <i class="fas fa-thumbtack"></i> <span>0</span>
                         </div>
                     </div>
                     <div id="topRightPanel">
@@ -52,12 +40,12 @@
                     </div>
                 </div>
                 <div id="mainLeftPanel">
-                    <div>
+                    <div id="messagePanel">
                         <div id="messages">
 
                         </div>
                         <div id="input">
-                            <button type="button" id="inputButton">+</button>
+                            <button type="button" id="inputButton"><i class="fas fa-plus"></i></button>
                             <input type="text" id="inputText"></input>
                         </div>
                     </div>

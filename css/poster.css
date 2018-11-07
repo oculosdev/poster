@@ -1,0 +1,82 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: NotoSansJP,Slack-Lato,appleLogo,sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 90%;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 220px auto;
+    height: 100vh;
+}
+
+#mainPanel {
+    display: grid;
+    grid-template-rows: 61px auto;
+}
+
+#mainLeftPanel {
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+
+#topPanel {
+    display: grid;
+    grid-template-columns: auto 300px;
+    border-bottom: 1px solid lightgray;
+}
+
+#topLeftPanel {
+    display: grid;
+    grid-template-rows: auto 31px;
+}
+
+#messagePanel {
+    display: grid;
+    grid-template-rows: auto 40px;
+    padding: 10px;
+}
+
+#input {
+    border-top: 1px solid lightgray;
+}
+
+#leftPanel {
+    display: grid;
+    grid-template-rows: 61px auto;
+    background: #4D394B;
+    color: rgb(184,176,183);
+    padding: 10px;
+}
+
+#rightPanel {
+    display: grid;
+    grid-template-rows: 40px auto;
+    border-left: 1px solid lightgray;
+}
+
+#profileUserName {
+    color: white;
+    font-weight: bold;
+}
+
+#profileFullName {
+    font-size: .875rem;
+}
+
+.messageContainer {
+    display: grid;
+    padding: 3px;
+    margin: 2px;
+}
+
+.messageName  {
+    font-weight: bold;
+}
