@@ -1,0 +1,64 @@
+
+
+body {
+    margin: 0;
+    font-family: NotoSansJP,Slack-Lato,appleLogo,sans-serif;
+    color: #2c2d30;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 220px auto;
+    height: 100%;
+}
+
+#left {
+    display: grid;
+    grid-template-rows: 50px auto;
+    background: #4D394B;
+    color: rgb(184,176,183);
+    border-right: 1px solid lightgray;
+}
+
+#inputText {
+    width: 80%;
+}
+
+#top {
+    border-bottom: 1px solid lightgray;
+}
+
+.post {
+    border: 1px solid lightgray;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.postTop {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#userPanel {
+    border-left: 1px solid lightgray;
+}
+
+#inputPanel {
+    border-top: 1px solid lightgray;
+}
+
+#right {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: auto 220px;
+}
+
+#dialogOuterPanel {
+    display: grid;
+    grid-template-rows: auto 50px;
+}

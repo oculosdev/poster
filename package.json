@@ -8,5 +8,8 @@
     "start": "live-server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
 }
